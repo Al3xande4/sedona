@@ -1,11 +1,11 @@
 @font-face{
     font-family: "Heading";
-    src: url('/fonts/ptsans-700.woff2');
+    src: url('../fonts/ptsans-700.woff2');
     font-weight: 700;
 }
 @font-face {
     font-family: "Text basic";
-    src: url('/fonts/ptsans-400.woff2');
+    src: url('../fonts/ptsans-400.woff2');
     font-weight: 400;
 }
 
@@ -14,13 +14,6 @@ body{
     margin: 0 auto;
 }
 
-main{
-    background-image: url("/img/index-background.png");
-    background-repeat: no-repeat;
-    background-size: 1200px 485px;
-    background-attachment:scroll;
-    background-position-x: center;
-}
 .main-navigation{
     height: 64px;
     display: flex;
@@ -77,6 +70,35 @@ main{
     text-transform: uppercase;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+.main-background{
+    background-image: url("../img/index-background.png");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 485px;
+    background-attachment:scroll;
+    background-position-x: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto
+}
+
+.welcome_img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 51px;
+}
+
+.divider{
+    margin-top: auto;
+}
+h1{
+    font-family: "Heading";
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 56px;
 }
 
 .reasons-section{
@@ -137,10 +159,6 @@ main{
     padding-right: 28%;
     padding-left: 28%;
     text-transform: uppercase;
-}
-.welcome_img{
-    display: block;
-    margin: 0 auto;
 }
 h1{
     font-size: 30px;
@@ -206,12 +224,11 @@ p{
 }
 
 .mailing-list-section{
-    background-image: url("/img/Subscribe.jpg");
+    background-image: url("../img/Subscribe.jpg");
     background-repeat: no-repeat;
     background-attachment:scroll;
     background-position-x: center;
-    padding-top: 96px;
-    padding-bottom: 44px;
+    padding: 96px 258px 54px 258px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -220,31 +237,33 @@ p{
 }
 
 .mailing-list-section h2{
-    width: 100%;
     color: #FFFFFF;
 }
 
 .mailing-list-section p{
-    width: 100%;
     color: #FFFFFF;
     font-style: normal;
-    padding: 0 28%;
     margin-top: 20px;
 }
 .email-form{
     margin-top: 54px;
+    width: 100%;
+    box-sizing: content-box;
     display: flex;
+    justify-content: center;
 }
 
 .email-input{
+    width: 66%;
     padding: 12px 20px;
     border-radius: 4px 0 0 4px;
     border: none;
 }
 .subscribe-button{
+    width: 34%;
     font-family: "Heading";
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase;
     color: white;
     border-radius: 0 4px 4px 0;
